@@ -11,11 +11,11 @@
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="navbar bg-body-tertiary shadow-lg justify-content-center mb-4">
         <h1 class="text-center">Trabajo Práctico 1: Datos Personales</h1>
     </header>
-    <main class="container">
+    <main class="container d-flex flex-column gap-4">
         <section class="d-flex flex-column">
             <label class="h2 text-decoration-underline text-center">Cuantas veces ejercité, y combiné, cada grupo muscular?</label>
             <div class="flourish-embed flourish-hierarchy" data-src="visualisation/24751433">
@@ -24,9 +24,49 @@
                     <img src="https://public.flourish.studio/visualisation/24751433/thumbnail" width="100%" alt="hierarchy visualization" />
                 </noscript>
             </div>
+            <p class="w-75 mx-auto text-center">
+                Se puede observar una distribucion bastante pareja entre los grupos musculares principales,
+                pero con una marcada preferencia por el tren superior.
+                En cambio, con los grupos musculares secundarios aparece con mayor frecuencia el pecho y los hombros.
+            </p>
+        </section>
+        <section class="d-flex flex-column">
+            <label class="h2 text-decoration-underline text-center">Que tanta relación hay entre la duración del entrenamiento y las calorías quemadas?</label>
+            <div class="flourish-embed flourish-scatter" data-src="visualisation/24942024">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/24942024/thumbnail" width="100%" alt="scatter visualization" />
+                </noscript>
+            </div>
+            <p class="w-75 mx-auto text-center">
+                Se puede observar una relación clara, directamente proporcional entre ambas variables.
+                Cuanto más dure el entrenamiento, más calorías se queman.
+            </p>
+        </section>
+        <section class="d-flex flex-column">
+            <label class="h2 text-decoration-underline text-center">Qué porcentaje de entrenamientos incluye cardio?</label>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/24942342">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/24942342/thumbnail" width="100%" alt="chart visualization" />
+                </noscript>
+            </div>
+        </section>
+        <section class="d-flex flex-column">
+            <label class="h2 text-decoration-underline text-center">Cómo varía la cantidad de calorías quemadas según el grupo muscular principal?</label>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/24942382">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/24942382/thumbnail" width="100%" alt="chart visualization" />
+                </noscript>
+            </div>
+            <p class="w-75 mx-auto text-center">
+                Se puede observar como los entrenamientos de Hombros, Pecho y Piernas son los que más calorías queman en promedio,
+                con los entrenamientos de brazos y espalda quedando últimos en esta métrica.
+            </p>
         </section>
     </main>
-    <footer class="d-flex flex-column text-center mt-4 py-4 shadow-lg bg-body-tertiary mt-auto">
+    <footer class="d-flex flex-column text-center py-4 shadow-lg bg-body-tertiary mt-auto">
         <h4>ITBA - Data Science</h4>
         <h5>Lautaro Joaquin Fonseca</h5>
     </footer>
